@@ -1,0 +1,339 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 20%; /* Ancho de las barras laterales */
+    height: 100vh; /* Altura total de la ventana del navegador */
+    background-color: #020000; /* Color de las barras laterales */
+    position: fixed; /* Para fijar las barras laterales en su posición */
+    top: 0;
+}
+
+.left-sidebar {
+    left: 0;
+}
+
+.right-sidebar {
+    right: 0;
+}
+
+.content {
+    margin-left: 20%; /* Ajustar el margen izquierdo para que el contenido no se superponga con la barra lateral izquierda */
+    margin-right: 20%; /* Ajustar el margen derecho para que el contenido no se superponga con la barra lateral derecha */
+    padding: 1rem;
+}
+
+/*Hedear y footer*/
+
+header {
+    background-image: url('../images/header.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajuste para que la imagen cubra todo el encabezado */
+    background-position: center; /* Posiciona la imagen en el centro */
+    color: #fff; /* Color del texto */
+    padding: 80px 20px; /* Espaciado interno */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start; /* Alinea los elementos verticalmente en el centro */
+    margin-bottom: 100px; /* Margen inferior */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-content h2 {
+    display: inline-block;
+    margin-right: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.subtitulo {
+    text-align:left; 
+}
+
+.subtitulo h3 {
+    margin: 0; 
+}
+
+footer {
+    background-color: #444; /* Fondo gris */
+    color: white; /* Color de letra blanco */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Activa el uso de flexbox */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/*Section Mas Sobre Nosotros*/
+
+section {
+    margin-top: 60px;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.sectionMas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.sectionMas img {
+    width: 70px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .sectionMas {
+        flex-direction: column; /* Cambia la dirección del flexbox a vertical */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .sectionMas img {
+        width: 50px; /* Ajusta el tamaño de las imágenes para pantallas más pequeñas */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin-bottom: 20px; /* Añade espacio entre las imágenes */
+    }
+}
+
+/*Section Casas*/
+
+.sectionCasas {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+.sectionCasas p{
+    text-align: left; 
+    margin-left: 20px;
+}
+
+.sectionCasas img {
+    width: 95%; /* Ajusta el tamaño de las imágenes según sea necesario */
+    
+}
+
+.iconosCasas {
+    width: 80%; /* Ocupa todo el ancho del contenedor padre */
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los iconos */
+    margin-left: 20px;
+}
+
+.iconosCasas img{
+    width: 20px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 20px;
+    margin-left: 30px;
+}
+
+.sectionCasas button {
+    width: 90%; /* Ancho del botón al 100% del contenedor */
+    background-color: rgb(189, 89, 22); /* Color de fondo naranja */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 15px; /* Margen superior */
+}
+
+@media (max-width: 768px) {
+    .sectionCasas {
+        flex-direction: column; /* Cambia la dirección del flexbox a vertical */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .sectionCasas p {
+        text-align: center; /* Centra el texto */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    .sectionCasas img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    }
+
+    .iconosCasas {
+        width: 100%; /* Ancho del contenedor al 100% */
+        justify-content: center; /* Centra los iconos horizontalmente */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+
+    .iconosCasas img {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 10px; /* Añade un poco de espacio entre los iconos */
+    }
+
+    .sectionCasas button {
+        width: 100%; /* Ancho del botón al 100% del contenedor */
+        margin-top: 20px; /* Aumenta el margen superior */
+        margin-bottom: 20px;
+    }
+}
+
+/*Boton ver todos*/
+
+.container-todasbtn {
+    text-align: right; /* Alinea el contenido del contenedor a la derecha */
+}
+
+.todasbtn{
+    width: 15%; /* Ancho del botón al 100% del contenedor */
+    background-color: rgb(31, 156, 38); /* Color de fondo naranja */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 30px; /* Margen superior */
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .container-todasbtn {
+        text-align: center; /* Alinea el contenido del contenedor a la derecha */
+    }
+
+    .todasbtn{
+        width: 80%;
+    }
+}
+
+/*Section Contacto*/
+
+.sectionContacto {
+    background-image: url('../images/encuentra.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajuste para que la imagen cubra todo el encabezado */
+    background-position: center; /* Posiciona la imagen en el centro */
+    color: #fff; /* Color del texto */
+    padding: 80px 20px; /* Espaciado interno */
+}
+
+.container-contacto{
+    text-align: left;
+}
+
+.contactobtn{
+    width: 20%; /* Ancho del botón al 100% del contenedor */
+    background-color: rgb(189, 89, 22); /* Color de fondo naranja */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 15px; /* Margen superior */
+}
+
+@media (max-width: 768px) {
+    .contactobtn{
+        width: 80%;
+    }
+}
+
+/*Section Fin*/
+
+/* Estilo para el contenedor principal */
+.container-fin {
+    display: flex; /* Establece el contenedor principal como flexbox */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+
+/* Estilo para el contenedor del blog */
+.container-blog {
+    flex: 1; /* El contenedor del blog ocupa todo el espacio disponible */
+    margin-right: 20px; /* Margen derecho para separar del contenedor de comentarios */
+}
+
+.container-blog-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre cada entrada del blog */
+}
+
+.container-blog-imagen img {
+    max-width: 250px; /* Tamaño máximo de la imagen */
+    margin-top: 15px;
+}
+
+.container-blog-text {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+}
+
+/* Estilo para el contenedor de comentarios */
+.container-comentarios {
+    flex: 1; /* El contenedor de comentarios ocupa todo el espacio disponible */
+}
+
+.container-comentarios-tarjeta {
+    font-size: 50px;
+    background-color: green; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    width: 100%; /* Ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    
+}
+
+@media (max-width: 768px) {
+    .container-fin {
+        flex-direction: column; /* Cambia la dirección del flexbox a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .container-blog,
+    .container-comentarios {
+        width: 100%; /* Ancho completo en pantallas más pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-bottom: 40px; /* Aumenta el espacio entre los contenedores */
+    }
+
+    .container-comentarios-tarjeta {
+        font-size: 16px; /* Tamaño de fuente para comentarios en pantallas pequeñas */
+    }
+
+    .container-blog-item {
+        flex-direction: column; /* Cambia la dirección del flexbox a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .container-blog-imagen,
+    .container-blog-text {
+        max-width: 100%; /* Ancho completo en pantallas más pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-top: 20px; /* Aumenta el espacio entre los elementos */
+    }
+}
