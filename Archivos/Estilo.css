@@ -39,6 +39,14 @@ body {
     right: 0;
 }
 
+@media (max-width: 1024px) {
+
+    .left-sidebar,
+    .right-sidebar {
+        width: 10%
+    }
+}
+
 @media (max-width: 768px) {
 
     .left-sidebar,
@@ -53,6 +61,14 @@ body {
     margin-right: 20%;
     /* Ajustar el margen derecho para que el contenido no se superponga con la barra lateral derecha */
     padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    .content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -92,9 +108,22 @@ footer {
     /* Alinea los elementos verticalmente */
 }
 
+h5 {
+    font-size: 18px; 
+    line-height: 1.5; 
+    font-weight: bold;
+}
 
+.blog-escrito {
+    font-size: 10px; 
+    line-height: 1; 
+}
 
-/* Estilo para el contenedor de comentarios */
+.blog-descripcion {
+    font-size: 14px; 
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
 
 
 .container-comentarios-tarjeta {

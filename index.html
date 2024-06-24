@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./Archivos/Estilo.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./script.js"></script>
     <title>Inmobiliaria</title>
 </head>
 
@@ -66,58 +67,7 @@
 
         <section class="container my-5">
             <h2 class="text-center">Casas y Departamentos en Venta</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="./images/anuncio1.jpg" class="card-img-top" alt="anuncioUno">
-                        <div class="card-body">
-                            <h5 class="card-title">Casa de Lujo en el Lago</h5>
-                            <p class="card-text">Casa con lago con excelente vista, acabados de lujo a un excelente
-                                precio</p>
-                            <p class="card-text">U$S350.000</p>
-                            <div class="d-flex justify-content-around mb-3">
-                                <span><img src="./images/icono_wc.svg" alt="iconoUno"> 3</span>
-                                <span><img src="./images/icono_estacionamiento.svg" alt="iconoUno"> 3</span>
-                                <span><img src="./images/icono_dormitorio.svg" alt="iconoUno"> 4</span>
-                            </div>
-                            <button class="btn btn-primary btn-block">Ver Propiedad</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="./images/anuncio2.jpg" class="card-img-top" alt="anuncioDos">
-                        <div class="card-body">
-                            <h5 class="card-title">Casa Terminados de Lujo</h5>
-                            <p class="card-text">Casa con diseño moderno, así como tecnología inteligente y amueblada
-                            </p>
-                            <p class="card-text">U$S275.000</p>
-                            <div class="d-flex justify-content-around mb-3">
-                                <span><img src="./images/icono_wc.svg" alt="iconoDos"> 3</span>
-                                <span><img src="./images/icono_estacionamiento.svg" alt="iconoDos"> 3</span>
-                                <span><img src="./images/icono_dormitorio.svg" alt="iconoDos"> 4</span>
-                            </div>
-                            <button class="btn btn-primary btn-block">Ver Propiedad</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="./images/anuncio3.jpg" class="card-img-top" alt="anuncioTres">
-                        <div class="card-body">
-                            <h5 class="card-title">Casa con Alberca</h5>
-                            <p class="card-text">Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad
-                            </p>
-                            <p class="card-text">U$S250.000</p>
-                            <div class="d-flex justify-content-around mb-3">
-                                <span><img src="./images/icono_wc.svg" alt="iconoTres"> 3</span>
-                                <span><img src="./images/icono_estacionamiento.svg" alt="iconoTres"> 3</span>
-                                <span><img src="./images/icono_dormitorio.svg" alt="iconoTres"> 4</span>
-                            </div>
-                            <button class="btn btn-primary btn-block">Ver Propiedad</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="property-cards">
             </div>
             <div class="text-right">
                 <button class="btn btn-success">Ver Todas</button>
@@ -127,7 +77,7 @@
         <section class="bg-dark text-white text-left py-5"
             style="background-image: url('../images/encuentra.jpg'); background-size: cover; background-position: center;">
             <div class="container">
-                <h2>Encuentra la casa de tus sueños</h2>
+                <h2><strong> Encuentra la casa de tus sueños</strong></h2>
                 <h3>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</h3>
                 <button class="btn btn-warning mt-3">Contactános</button>
             </div>
@@ -145,8 +95,8 @@
                         </div>
                         <div class="col-md-6 mb-4 text-left">
                             <h5>Terraza en el techo de tu casa</h5>
-                            <p>Escrito el: 20/10/2019 por: Admin</p>
-                            <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y
+                            <p class="blog-escrito" >Escrito el: 20/10/2019 por: Admin</p>
+                            <p class="blog-descripcion">Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y
                                 ahorrando dinero</p>
                         </div>
                     </div>
@@ -157,8 +107,8 @@
                         </div>
                         <div class="col-md-6 mb-4 text-left">
                             <h5>Guía para la decoración de tu hogar</h5>
-                            <p>Escrito el: 20/10/2019 por: Admin</p>
-                            <p>Maximiza el espacio de tu hogar con esta guía, aprende a combinar muebles y colores para
+                            <p class="blog-escrito">Escrito el: 20/10/2019 por: Admin</p>
+                            <p class="blog-descripcion">Maximiza el espacio de tu hogar con esta guía, aprende a combinar muebles y colores para
                                 darle vida a tu espacio</p>
                         </div>
                     </div>
