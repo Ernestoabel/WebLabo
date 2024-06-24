@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./Archivos/Estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Inmobiliaria</title>
 </head>
 
@@ -12,152 +15,193 @@
     <div class="left-sidebar"></div>
     <div class="right-sidebar"></div>
     <div class="content">
-        <header>
-            <div class="header-content">
-                <h2>BienesRaices</h2>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Anuncios</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
+        <header class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0">Bienes<strong>Raices</strong></h2>
+                        <nav>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Anuncios</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://wa.me/1234567890" target="_blank">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="text-left mt-5">
+                    <h3>Venta de Casas y Departamentos</h3>
+                    <h3>Exclusivos de Lujo</h3>
+                </div>
             </div>
-
-            <div class="subtitulo">
-                <h3>Venta de Casas y Departamentos</h3>
-                <h3>Exclusivos de Lujo</h3>
-            </div>
-
         </header>
 
-        <section>
-            <h2>Mas Sobre Nosotros</h2>
-            <div class="sectionMas">
-                <div>
-                    <img src="./images/icono1.svg" alt="iconoUno">
+        <section class="container my-5">
+            <h2 class="text-center">Más Sobre Nosotros</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <img src="./images/icono1.svg" alt="iconoUno" class="mb-2">
                     <h3>Seguridad</h3>
                     <p>La mejor seguridad</p>
                 </div>
-                <div>
-                    <img src="./images/icono2.svg" alt="iconoDos">
+                <div class="col-md-4 mb-4">
+                    <img src="./images/icono2.svg" alt="iconoDos" class="mb-2">
                     <h3>Mejor Precio</h3>
                     <p>El mejor tiempo</p>
                 </div>
-                <div>
-                    <img src="./images/icono3.svg" alt="iconoTres">
+                <div class="col-md-4 mb-4">
+                    <img src="./images/icono3.svg" alt="iconoTres" class="mb-2">
                     <h3>A tiempo</h3>
-                    <p>Los mas rapidos</p>
+                    <p>Los más rápidos</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Casas y Departamentos en Venta</h2>
-
-            <div class="sectionCasas">
-                <div>
-                    <img src="./images/anuncio1.jpg" alt="anuncioUno">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa con lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p>U$S350.000</p>
-                    <div class="iconosCasas">
-                        <img src="./images/icono_wc.svg" alt="iconoUno">3
-                        <img src="./images/icono_estacionamiento.svg" alt="iconoUno">3
-                        <img src="./images/icono_dormitorio.svg" alt="iconoUno">4
-                    </div>
-                    <button>Ver Propiedad</button>
-                </div>
-                <div>
-                    <img src="./images/anuncio2.jpg" alt="anuncioDos">
-                    <h3>Casa terminadas de lujo</h3>
-                    <p>Casa con diseño moderno, así como tecnologia inteligente y amueblada</p>
-                    <p>U$S275.000</p>
-                    <div class="iconosCasas">
-                        <img src="./images/icono_wc.svg" alt="iconoUno">3
-                        <img src="./images/icono_estacionamiento.svg" alt="iconoUno">3
-                        <img src="./images/icono_dormitorio.svg" alt="iconoUno">4
-                    </div>
-                    <button>Ver Propiedad</button>
-                </div>
-                <div>
-                    <img src="./images/anuncio3.jpg" alt="anuncioTres">
-                    <h3>Casa con pileta</h3>
-                    <p>Casa con pileta y acabados de lujo en la ciudad, excelenete oportunidad</p>
-                    <p>U$S250.000</p>
-                    <div class="iconosCasas">
-                        <img src="./images/icono_wc.svg" alt="iconoUno">3
-                        <img src="./images/icono_estacionamiento.svg" alt="iconoUno">3
-                        <img src="./images/icono_dormitorio.svg" alt="iconoUno">4
-                    </div>
-                    <button>Ver Propiedad</button>
-                </div>
-            </div>
-            <div class="container-todasbtn">
-                <button class="todasbtn">Ver Todas</button>
-            </div>
-        </section>
-
-        <section>
-            <div class="sectionContacto">
-                <div class="container-contacto">
-                    <h2>Encuentra la casa de tus seños</h2>
-                    <h3>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</h3>
-
-                    <button class="contactobtn">Contactános</button>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container-fin">
-                <div class="container-blog">
-                    <h2>Nuestro Blog</h2>
-                    <div class="container-blog-item">
-                        <div class="container-blog-imagen">
-                            <img src="./images/blog1.jpg" alt="">
+        <section class="container my-5">
+            <h2 class="text-center">Casas y Departamentos en Venta</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/anuncio1.jpg" class="card-img-top" alt="anuncioUno">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa de Lujo en el Lago</h5>
+                            <p class="card-text">Casa con lago con excelente vista, acabados de lujo a un excelente
+                                precio</p>
+                            <p class="card-text">U$S350.000</p>
+                            <div class="d-flex justify-content-around mb-3">
+                                <span><img src="./images/icono_wc.svg" alt="iconoUno"> 3</span>
+                                <span><img src="./images/icono_estacionamiento.svg" alt="iconoUno"> 3</span>
+                                <span><img src="./images/icono_dormitorio.svg" alt="iconoUno"> 4</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Ver Propiedad</button>
                         </div>
-                        <div class="container-blog-text">
-                            <h2>Terraza en el techo de tu casa</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/anuncio2.jpg" class="card-img-top" alt="anuncioDos">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa Terminados de Lujo</h5>
+                            <p class="card-text">Casa con diseño moderno, así como tecnología inteligente y amueblada
+                            </p>
+                            <p class="card-text">U$S275.000</p>
+                            <div class="d-flex justify-content-around mb-3">
+                                <span><img src="./images/icono_wc.svg" alt="iconoDos"> 3</span>
+                                <span><img src="./images/icono_estacionamiento.svg" alt="iconoDos"> 3</span>
+                                <span><img src="./images/icono_dormitorio.svg" alt="iconoDos"> 4</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Ver Propiedad</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/anuncio3.jpg" class="card-img-top" alt="anuncioTres">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa con Alberca</h5>
+                            <p class="card-text">Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad
+                            </p>
+                            <p class="card-text">U$S250.000</p>
+                            <div class="d-flex justify-content-around mb-3">
+                                <span><img src="./images/icono_wc.svg" alt="iconoTres"> 3</span>
+                                <span><img src="./images/icono_estacionamiento.svg" alt="iconoTres"> 3</span>
+                                <span><img src="./images/icono_dormitorio.svg" alt="iconoTres"> 4</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Ver Propiedad</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-success">Ver Todas</button>
+            </div>
+        </section>
+
+        <section class="bg-dark text-white text-left py-5"
+            style="background-image: url('../images/encuentra.jpg'); background-size: cover; background-position: center;">
+            <div class="container">
+                <h2>Encuentra la casa de tus sueños</h2>
+                <h3>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</h3>
+                <button class="btn btn-warning mt-3">Contactános</button>
+            </div>
+        </section>
+
+
+
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2>Nuestro Blog</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <img src="./images/blog1.jpg" class="card-img-top" alt="Blog 1">
+                        </div>
+                        <div class="col-md-6 mb-4 text-left">
+                            <h5>Terraza en el techo de tu casa</h5>
                             <p>Escrito el: 20/10/2019 por: Admin</p>
                             <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y
                                 ahorrando dinero</p>
                         </div>
                     </div>
-                    <div class="container-blog-item">
-                        <div class="container-blog-imagen">
-                            <img src="./images/blog2.jpg" alt="">
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4 ">
+                            <img src="./images/blog2.jpg" class="card-img-top" alt="Blog 2">
                         </div>
-                        <div class="container-blog-text">
-                            <h2>Guía para la decoración de tu hogar</h2>
+                        <div class="col-md-6 mb-4 text-left">
+                            <h5>Guía para la decoración de tu hogar</h5>
                             <p>Escrito el: 20/10/2019 por: Admin</p>
-                            <p>Maximiza el espacio de tu hogar con esta guia, aprende a combinar muebles y colores para
+                            <p>Maximiza el espacio de tu hogar con esta guía, aprende a combinar muebles y colores para
                                 darle vida a tu espacio</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-comentarios">
+
+                <div class="col-md-6 mb-4 d-flex flex-column container-comentarios-tarjeta ">
                     <h2>Comentarios</h2>
-                    <div class="container-comentarios-tarjeta">
-                        "El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron
-                        cumple todas mis expectativas."<br>-Juan
+                    <div class="card bg-success text-white p-4 mb-4 flex-grow-1">
+                        <p class="mb-0 fs-5">"El personal se comportó de una excelente forma, muy buena atención y la
+                            casa que me ofrecieron cumple todas mis expectativas."</p>
+                        <p class="mb-0 fs-5">Juan</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <br>
-        <footer>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Anuncios</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <p>Todos los Derechos Reservados 2020@</p>
+        <footer class="bg-dark text-white py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <nav class="d-flex mb-3">
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Anuncios</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://wa.me/1234567890" target="_blank">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 mb-4 d-flex justify-content-md-end">
+                        <p class="mb-0">Todos los Derechos Reservados 2020@</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
+
+
 </body>
+
+</html>
